@@ -1,0 +1,14 @@
+id: power_strike
+name: "Power Strike"
+description: "A heavy melee attack dealing 150% weapon damage."
+skill_required: heavy_weapons
+skill_level_required: 5
+cooldown_ms: 3000
+resource_cost: 15
+damage_formula: "weapon_damage * 1.5 + attr_1 * 2"
+range: 1.5
+target_type: single
+cast_time_ms: 0
+animation: melee_attack
+vfx: null
+sound: null  # placeholder

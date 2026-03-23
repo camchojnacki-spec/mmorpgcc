@@ -1,0 +1,29 @@
+# Class Template — Caster Archetype
+id: placeholder_mage
+name: "Mage"
+description: "A caster specializing in elemental magic and arcane studies. Placeholder class."
+role_tendency: damage_support
+starting_attributes:
+  attr_1: 0
+  attr_2: 1  # agility
+  attr_3: 1  # toughness
+  attr_4: 3  # mental power
+  attr_5: 2  # mental resilience
+  attr_6: 0
+  attr_7: 0
+  attr_8: 1
+skill_affinities:
+  elemental_magic: 0.5   # native
+  arcane_studies: 0.5     # native
+  alchemy: 0.75           # aligned
+  enchanting: 0.75        # aligned
+  heavy_weapons: 1.5      # misaligned
+  shield_techniques: 2.0  # opposed
+starting_equipment:
+  main_hand: starter_staff
+  off_hand: null
+  headwear: null
+  back_item: null
+  body: starter_robes
+  boots: starter_boots
+passive_tree_start: spell_damage_arcane_region

@@ -1,0 +1,78 @@
+# Core Attributes Definition
+# The creative director defines names and descriptions for each attribute.
+# The engine references attributes by key (attr_1 through attr_8).
+# Replace placeholder names with your game's themed attribute names.
+
+id: core_attributes
+attributes:
+  - key: attr_1
+    name: "PLACEHOLDER_1"  # e.g., Strength, Power, Force
+    description: "Physical power. Affects melee damage and inventory capacity."
+    effects:
+      - stat: melee_damage
+        per_point: 0.5
+      - stat: inventory_capacity
+        per_point: 0.4
+
+  - key: attr_2
+    name: "PLACEHOLDER_2"  # e.g., Dexterity, Agility, Finesse
+    description: "Physical agility. Affects crit chance, dodge, and attack speed."
+    effects:
+      - stat: crit_chance
+        per_point: 0.2
+      - stat: dodge_chance
+        per_point: 0.15
+
+  - key: attr_3
+    name: "PLACEHOLDER_3"  # e.g., Constitution, Endurance, Vitality
+    description: "Physical toughness. Affects max HP, durability, and death penalty reduction."
+    effects:
+      - stat: max_hp
+        per_point: 10
+      - stat: durability_bonus
+        per_point: 0.5
+
+  - key: attr_4
+    name: "PLACEHOLDER_4"  # e.g., Intelligence, Mind, Acuity
+    description: "Mental power. Affects spell damage and resource pool."
+    effects:
+      - stat: spell_damage
+        per_point: 0.5
+      - stat: max_resource
+        per_point: 5
+
+  - key: attr_5
+    name: "PLACEHOLDER_5"  # e.g., Wisdom, Resolve, Insight
+    description: "Mental resilience. Affects healing effectiveness and CC resistance."
+    effects:
+      - stat: healing_power
+        per_point: 0.3
+      - stat: cc_resistance
+        per_point: 0.2
+
+  - key: attr_6
+    name: "PLACEHOLDER_6"  # e.g., Charisma, Presence, Influence
+    description: "Social influence. Affects vendor prices and crafting experimentation."
+    effects:
+      - stat: vendor_discount
+        per_point: 0.1
+      - stat: craft_experiment_bonus
+        per_point: 0.2
+
+  - key: attr_7
+    name: "PLACEHOLDER_7"  # e.g., Luck, Fortune, Fate
+    description: "Fortune. Affects loot quality, crit chance, and rare drop rates."
+    effects:
+      - stat: loot_quality
+        per_point: 0.3
+      - stat: crit_chance
+        per_point: 0.1
+
+  - key: attr_8
+    name: "PLACEHOLDER_8"  # e.g., Resilience, Willpower, Tenacity
+    description: "Inner strength. Affects damage reduction and resource regeneration."
+    effects:
+      - stat: damage_reduction
+        per_point: 0.2
+      - stat: resource_regen
+        per_point: 0.15

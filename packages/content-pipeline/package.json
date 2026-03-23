@@ -1,0 +1,22 @@
+{
+  "name": "@mmorpg/content-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsx src/build.ts",
+    "watch": "tsx src/watch.ts",
+    "dev": "tsx src/watch.ts"
+  },
+  "dependencies": {
+    "yaml": "^2.7.0",
+    "chokidar": "^4.0.0",
+    "glob": "^11.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,33 @@
+id: difficulty_scaling
+tiers:
+  - level: 1
+    enemy_hp_multiplier: 1.2
+    enemy_damage_multiplier: 1.1
+    enemy_count_modifier: 1.0
+    loot_quality_bonus: 0.05
+    xp_multiplier: 1.1
+    affixes: []
+  - level: 2
+    enemy_hp_multiplier: 1.5
+    enemy_damage_multiplier: 1.25
+    enemy_count_modifier: 1.1
+    loot_quality_bonus: 0.1
+    xp_multiplier: 1.25
+    affixes:
+      - id: bolstering
+        description: "Enemies gain 10% damage when a nearby ally dies"
+  - level: 3
+    enemy_hp_multiplier: 1.8
+    enemy_damage_multiplier: 1.4
+    enemy_count_modifier: 1.2
+    loot_quality_bonus: 0.2
+    xp_multiplier: 1.5
+    affixes:
+      - id: bolstering
+      - id: volcanic
+        description: "Random fire zones appear during combat"
+speed_bonus_thresholds:
+  - under_minutes: 15
+    bonus: guaranteed_rare
+  - under_minutes: 10
+    bonus: epic_chance_up

@@ -1,0 +1,20 @@
+id: heavy_weapons
+name: "Heavy Weapons"
+description: "Mastery of swords, axes, and maces."
+category: combat
+tier: 1
+max_level: 50
+base_xp_cost: 100
+progression_exponent: 1.8
+prerequisites: []
+thresholds:
+  - level: 5
+    unlocks_ability: power_strike
+    description: "Unlocks Power Strike — a heavy melee attack dealing 150% weapon damage"
+  - level: 15
+    unlocks_ability: cleave
+    description: "Unlocks Cleave — swing hitting all enemies in a frontal cone"
+  - level: 30
+    unlocks_ability: devastating_blow
+    description: "Unlocks Devastating Blow — massive single-target hit with armor penetration"
+    title: "Weaponmaster"

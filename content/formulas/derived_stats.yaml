@@ -1,0 +1,34 @@
+id: derived_stat_formulas
+formulas:
+  max_hp:
+    base: 100
+    scaling:
+      - attribute: attr_3
+        per_point: 10
+  max_resource:
+    base: 50
+    scaling:
+      - attribute: attr_4
+        per_point: 5
+  inventory_capacity:
+    base: 20
+    scaling:
+      - attribute: attr_1
+        per_point: 0.4
+      - attribute: attr_3
+        per_point: 0.2
+    backpack_bonus: true
+  armor_rating:
+    base: 0
+    scaling:
+      - attribute: attr_3
+        per_point: 0.5
+    equipment_bonus: true
+  crit_chance:
+    base: 5
+    scaling:
+      - attribute: attr_2
+        per_point: 0.2
+      - attribute: attr_7
+        per_point: 0.1
+    cap: 50

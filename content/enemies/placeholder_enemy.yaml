@@ -1,0 +1,22 @@
+id: placeholder_enemy
+name: "Training Dummy"
+description: "A basic enemy for testing combat systems."
+body_variant: enemy_basic
+level_range: [1, 5]
+base_stats:
+  hp: 100
+  damage: 10
+  armor: 2
+ai_behavior: aggressive
+aggro_range: 6.0
+leash_range: 12.0
+abilities:
+  - id: basic_attack
+    cooldown_ms: 2000
+    damage: 10
+    type: attack
+equipment_pool:
+  hand_main: [starter_sword, starter_axe]
+  headwear: [null, basic_helm]
+loot_table: basic_enemy_drops
+can_become_nemesis: true

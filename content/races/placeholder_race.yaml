@@ -1,0 +1,20 @@
+# Race Template
+# Replace with your game's race definition
+id: placeholder_race
+name: "Placeholder Race"
+description: "A placeholder race. Replace with your game's first race."
+attribute_modifiers:
+  attr_1: 1
+  attr_3: 1
+  attr_7: -1
+racial_passives:
+  - id: placeholder_passive
+    name: "Adaptive"
+    description: "+5% XP gain from all sources"
+    effect: { type: xp_bonus, value: 0.05 }
+body_types: [medium, heavy]
+appearance_options:
+  skin_tones: [light, medium, dark, pale, warm]
+  hair_styles: [short, long, braided, shaved, mohawk, ponytail]
+  hair_colors: [black, brown, blonde, red, white, blue]
+  markings: [none, scars, tattoos, war_paint]

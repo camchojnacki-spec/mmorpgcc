@@ -1,0 +1,29 @@
+# Class Template — Melee Archetype
+id: placeholder_warrior
+name: "Warrior"
+description: "A melee combatant specializing in heavy weapons and armor. Placeholder class."
+role_tendency: tank_damage
+starting_attributes:
+  attr_1: 3  # physical power
+  attr_2: 1  # agility
+  attr_3: 2  # toughness
+  attr_4: 0
+  attr_5: 0
+  attr_6: 1
+  attr_7: 0
+  attr_8: 1
+skill_affinities:
+  heavy_weapons: 0.5    # native
+  armor_mastery: 0.5    # native
+  shield_techniques: 0.75  # aligned
+  tactics: 0.75          # aligned
+  fire_magic: 1.5        # misaligned
+  divine_healing: 2.0    # opposed
+starting_equipment:
+  main_hand: starter_sword
+  off_hand: null
+  headwear: null
+  back_item: null
+  body: starter_chain
+  boots: starter_boots
+passive_tree_start: physical_damage_armor_region

@@ -1,0 +1,22 @@
+id: starter_sword
+name: "Basic Sword"
+description: "A simple but functional blade."
+category: weapon
+layer_type: hand_main
+asset_variant: sword_basic
+stackable: false
+max_stack: 1
+base_stats:
+  damage: 10
+  attribute_bonuses:
+    attr_1: 1
+mod_slot_count: 0
+mod_slot_types: []
+rarity_weights:
+  common: 0.7
+  uncommon: 0.25
+  rare: 0.05
+binding: none
+sell_value: 5
+repair_cost_per_point: 1
+durability_max: 100

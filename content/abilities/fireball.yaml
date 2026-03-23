@@ -1,0 +1,14 @@
+id: fireball
+name: "Fireball"
+description: "A ranged fire projectile dealing magic damage."
+skill_required: elemental_magic
+skill_level_required: 5
+cooldown_ms: 4000
+resource_cost: 20
+damage_formula: "spell_damage * 1.3 + attr_4 * 3"
+range: 8
+target_type: single
+cast_time_ms: 1500
+animation: spell_cast
+vfx: fireball_projectile
+sound: null  # placeholder

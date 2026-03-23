@@ -1,0 +1,8 @@
+id: currency_definitions
+currencies:
+  - id: primary
+    name: "Gold"  # Placeholder — creative director renames
+    description: "The standard currency."
+  - id: instance_tokens
+    name: "Dungeon Tokens"  # Placeholder
+    description: "Earned from completing instances. Exchange for specialized gear."

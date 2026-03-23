@@ -1,0 +1,20 @@
+id: elemental_magic
+name: "Elemental Magic"
+description: "Command over fire, ice, and lightning."
+category: combat
+tier: 1
+max_level: 50
+base_xp_cost: 100
+progression_exponent: 1.8
+prerequisites: []
+thresholds:
+  - level: 5
+    unlocks_ability: fireball
+    description: "Unlocks Fireball — a ranged fire projectile dealing magic damage"
+  - level: 15
+    unlocks_ability: flame_wall
+    description: "Unlocks Flame Wall — creates a wall of fire that damages enemies passing through"
+  - level: 30
+    unlocks_ability: meteor
+    description: "Unlocks Meteor — massive AoE fire damage from the sky"
+    title: "Elementalist"

@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment
+.env
+.env.local
+
+# Built content (generated from YAML)
+packages/client/public/content/
+packages/server/content/
+
+# Generated sprites (too large for git)
+assets/
+
+# LoRA files
+*.safetensors
+
+# Temp files
+.v4_extracted.txt
+
+# Docker volumes
+docker/data/

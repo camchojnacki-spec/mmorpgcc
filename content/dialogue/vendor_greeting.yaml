@@ -1,0 +1,25 @@
+id: vendor_greeting
+speaker: "Vendor"
+portrait: npc_vendor_neutral
+nodes:
+  - id: start
+    text: ""  # Creative director writes this
+    responses:
+      - text: "Show me what you have."
+        next: null
+        action: open_shop
+      - text: "Can you repair my gear?"
+        next: repair
+        action: open_repair
+        condition: "player.has_damaged_equipment"
+      - text: "Goodbye."
+        next: null
+  - id: repair
+    text: ""  # Creative director writes this — e.g., "That'll cost {repair_cost} gold."
+    responses:
+      - text: "Repair all."
+        next: null
+        action: repair_all
+        condition: "player.currencies.primary >= repair_cost"
+      - text: "Never mind."
+        next: start

@@ -1,0 +1,14 @@
+id: health_potion
+name: "Health Potion"
+description: "A basic restorative draught. Restores 50 HP."
+category: consumable
+layer_type: null
+asset_variant: potion_red
+stackable: true
+max_stack: 20
+use_effect:
+  type: restore_hp
+  value: 50
+cooldown_ms: 5000
+binding: none
+sell_value: 2

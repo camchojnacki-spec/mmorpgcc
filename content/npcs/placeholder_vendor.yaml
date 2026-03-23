@@ -1,0 +1,14 @@
+id: placeholder_vendor
+name: "Vendor"
+description: "A town vendor who buys and sells basic supplies."
+type: vendor
+location: { zone: town, x: 100.0, y: 150.0 }
+direction: S
+body_variant: npc_vendor
+equipment:
+  headwear: null
+  hand_main: null
+  back_item: null
+dialogue: vendor_greeting
+shop: basic_shop
+ambient_chatter: true
