@@ -1,1 +1,2 @@
-export { BootScene } from "./BootScene";
+export { BootScene } from './BootScene';
+export { TownScene } from './TownScene';
