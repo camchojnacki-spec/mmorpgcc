@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import { BootScene, TownScene } from './scenes';
+import { BootScene, CharacterCreateScene, TownScene } from './scenes';
 
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
@@ -7,7 +7,7 @@ const config: Phaser.Types.Core.GameConfig = {
   height: 720,
   parent: 'game-container',
   backgroundColor: '#0a0a1a',
-  scene: [BootScene, TownScene],
+  scene: [BootScene, CharacterCreateScene, TownScene],
   scale: {
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
