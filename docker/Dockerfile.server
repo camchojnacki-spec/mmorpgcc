@@ -1,0 +1,39 @@
+# Multi-stage build for Cloud Run
+# Stage 1: Build shared + server TypeScript
+FROM node:20-slim AS builder
+
+WORKDIR /app
+COPY package.json package-lock.json ./
+COPY packages/shared/package.json packages/shared/
+COPY packages/server/package.json packages/server/
+
+RUN npm ci --workspace=packages/shared --workspace=packages/server
+
+COPY tsconfig.base.json ./
+COPY packages/shared/ packages/shared/
+COPY packages/server/ packages/server/
+
+RUN npm run build --workspace=packages/shared
+RUN npm run build --workspace=packages/server
+
+# Stage 2: Production image (no dev deps, no source)
+FROM node:20-slim AS runner
+
+WORKDIR /app
+ENV NODE_ENV=production
+
+COPY package.json package-lock.json ./
+COPY packages/shared/package.json packages/shared/
+COPY packages/server/package.json packages/server/
+
+RUN npm ci --workspace=packages/shared --workspace=packages/server --omit=dev
+
+COPY --from=builder /app/packages/shared/dist packages/shared/dist
+COPY --from=builder /app/packages/server/dist packages/server/dist
+COPY packages/server/src/database/schema.sql packages/server/dist/database/schema.sql
+
+# Cloud Run sets PORT automatically (defaults to 8080)
+ENV PORT=8080
+EXPOSE 8080
+
+CMD ["node", "packages/server/dist/index.js"]
