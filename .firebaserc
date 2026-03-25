@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "YOUR_PROJECT_ID"
+    "default": "gen-lang-client-0387848408"
   },
   "targets": {
-    "YOUR_PROJECT_ID": {
+    "gen-lang-client-0387848408": {
       "hosting": {
-        "client": ["YOUR_PROJECT_ID"],
-        "admin": ["YOUR_PROJECT_ID-admin"]
+        "client": ["gen-lang-client-0387848408"],
+        "admin": ["gen-lang-client-0387848408-admin"]
       }
     }
   }
